@@ -175,7 +175,8 @@ class WorkButton extends ToolsButton{
                 if(!mode){
                     mode=true;
                     try {
-                    pythonProcess = Runtime.getRuntime().exec("puse_shorts_video.exe");
+                    pythonProcess = Runtime.getRuntime().exec("pythno puse_shorts_video.py");
+                    // pythonProcess = Runtime.getRuntime().exec("puse_shorts_video.exe");
                     // pythonProcess.
                     System.out.println(mode);
                     System.out.println(pythonProcess.isAlive());

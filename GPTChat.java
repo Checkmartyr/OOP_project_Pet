@@ -56,7 +56,8 @@ public class GPTChat extends JFrame{
         try {
 
             // Start the Python process
-            pythonProcess = Runtime.getRuntime().exec("python_script.exe");
+            pythonProcess = Runtime.getRuntime().exec("pythno python_script.py");
+            //pythonProcess = Runtime.getRuntime().exec("python_script.exe");
             out = new PrintWriter(pythonProcess.getOutputStream());
             in = new BufferedReader(new InputStreamReader(pythonProcess.getInputStream()));
 
